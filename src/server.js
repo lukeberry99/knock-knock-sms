@@ -5,7 +5,9 @@ const app = express()
 
 app.get('/', (req, res) => {
     res.send('I got you, boi\n')
+    res.send('Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh')
     console.log('oh shit son')
+    console.log('noice')
 })
 
 

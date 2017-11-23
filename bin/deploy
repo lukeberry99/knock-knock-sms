@@ -11,7 +11,7 @@ set -e
 # BEGIN CUSTOMIZATIONS #
 ECS_REGION='eu-west-2'
 ECS_CLUSTER_NAME='knock-knock-sms'
-ECS_SERVICE_NAME='knock-knock-sms'
+ECS_SERVICE_NAME='knock-knock-sms-1'
 ECS_TASK_DEFINITION_NAME='knock-knock-sms'
 ECR_NAME='knock-knock-sms'
 ECR_URI='893487201717.dkr.ecr.eu-west-2.amazonaws.com'
@@ -99,7 +99,7 @@ echo "You are deploying ${BRANCH} to ${ENVIRONMENT}."
   docker tag "${ECR_NAME}:latest" "${ECR_URI}/${ECR_NAME}:latest-${ENVIRONMENT}"
 
   # Login to ECR
-  $(aws ecr get-login --region "${ECS_REGION}")
+  # $(aws ecr get-login --region "${ECS_REGION}")
 
   # Push to the remote repo (by date)
   docker push "${ECR_URI}/${ECR_NAME}:${ENVIRONMENT}-${VERSION}"
