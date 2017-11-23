@@ -1,0 +1,19 @@
+{
+  "name": "knock-knock-sms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lukeberry99/knock-knock-sms.git"
+  },
+  "author": "Luke Berry <contact@luke-berry.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukeberry99/knock-knock-sms/issues"
+  },
+  "homepage": "https://github.com/lukeberry99/knock-knock-sms#readme"
+}
